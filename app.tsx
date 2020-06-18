@@ -24,8 +24,8 @@ function App() {
         }
     ])
     return(
-        <div className="bg-gray-200 h-full p-5">
-            <div className="w-1/2 mx-auto p-5 border-solid border border-1 border-teal-500 bg-white rounded">
+        <div className="bg-gray-200 h-full p-5 flex flex-col justify-center" style={{height:'100vh'}}>
+            <div className="w-1/2 mx-auto p-5 border-solid border border-1 border-teal-500 bg-white rounded shadow-md">
                 <h1 className="text-center text-teal-500 text-3xl my-5">To Do List </h1>
                 <todoContext.Provider value={{tasks, dispatchTasks}}>
                     <TodoList />

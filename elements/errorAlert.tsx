@@ -11,3 +11,12 @@ export function ErrorAlert ({errorMessage}:Props){
             </div>
     )
 }
+
+
+export function NoDataAlert ({errorMessage}:Props){
+    return(
+        <div className="w-full my-3 mr-3 bg-teal-100 border border-teal-400 text-teal-700 px-4 py-3 rounded relative ">
+                <p>{errorMessage}</p>
+            </div>
+    )
+}
