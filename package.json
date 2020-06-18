@@ -1,0 +1,29 @@
+{
+  "name": "todoreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@types/react": "^16.9.37",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^9.8.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^7.1.1",
+    "source-map-loader": "^1.0.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
+  }
+}
