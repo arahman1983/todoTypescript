@@ -3,11 +3,13 @@ import {todoContext} from '../context/todoContext'
 import {CheckBox} from '../elements/chexkbox'
 import {IconButton} from '../elements/button'
 import {NoDataAlert} from '../elements/errorAlert'
+import { LangsContext } from "../context/langsContext";
 
 
 export function TodoList(){
     const taskContext = React.useContext(todoContext)
-    
+    const {stringLocal} = React.useContext(LangsContext)
+
     const changeStatue = (id:Number)=> {
             let modifiedTask = taskContext.tasks.find(task => task.id === id)
         taskContext.dispatchTasks({
@@ -43,7 +45,7 @@ export function TodoList(){
                     )
                     :
                     (
-                        <NoDataAlert errorMessage="Theres nothing todo" />
+                        <NoDataAlert errorMessage={stringLocal.noDataMessage} />
                     )
                     
                 }
