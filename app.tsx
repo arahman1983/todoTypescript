@@ -1,8 +1,8 @@
 import * as React from "react";
-import {AddForm} from './component/addForm'
-import {TodoList} from './component/todoList'
-import {tasksReducer} from './context/tasks'
-import {todoContext} from './context/todoContext'
+import {AddForm} from './src/component/addForm'
+import {TodoList} from './src/component/todoList'
+import {tasksReducer} from './src/context/tasksResucer'
+import {todoContext} from './src/context/todoContext'
 
 
 function App() {

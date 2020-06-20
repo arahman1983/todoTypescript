@@ -45,7 +45,7 @@ export function AddForm() {
     return(
         <div className="w-full my-3">
             <div className="flex">
-                <TextInput value = {todoTask} changeFn={onValueChange} />
+                <TextInput value = {todoTask} changeFn={onValueChange} placeholderTxt="What will you do ?" />
                 <ButtonEl label= "Add" actionFn={addFn} />
             </div>
             {
