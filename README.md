@@ -7,10 +7,10 @@
         - parcel
         - typescript
 
-# simple : 
+## simple : 
     is a React app with Parcel Webpack settings and the simple UI and logic to create this app
 
-# router :  
+## router :  
     Adding simple Router to the app to explain routing logic
         - react-router-dom
 
@@ -20,9 +20,9 @@
 
 ###### to use this app you can clone the project from this link  https://github.com/arahman1983/todoTypescript
 ###### then you can first begin with simple, router, then master branch
-##### setup dependencies using the command 
+###### setup dependencies using the command 
     npm i 
-##### Run the start command
+###### Run the start command
     npm start
-##### thin go to the link that appears in terminal usually it will be 
+###### then go to the link that appears in terminal usually it will be 
     http://localhost:1234
