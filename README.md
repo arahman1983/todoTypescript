@@ -14,7 +14,7 @@
     Adding simple Router to the app to explain routing logic
         - react-router-dom
 
-# localization : 
+## localization : 
     Adding localization and switching between two languages
         - react-localization
 
