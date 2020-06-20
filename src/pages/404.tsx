@@ -2,8 +2,12 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import * as animationData from "../assets/404page.json";
+import {LangsContext} from '../context/langsContext'
+
 
 export function UnFoundPage() {
+  const {stringLocal} = React.useContext(LangsContext)
+
   return (
     <div>
       <Lottie
@@ -23,7 +27,7 @@ export function UnFoundPage() {
           to="/"
           className="bg-white hover:bg-teal-100 text-teal-500 py-2 px-4 mx-auto border border-teal-400 rounded shadow"
         >
-          Go Home
+          {stringLocal.goHome}
         </Link>
       </div>
     </div>

@@ -27,3 +27,14 @@ export function IconButton({label, actionFn}:Props) {
         </button>
     )
 }
+
+export function OutlineBtn ({label, actionFn}:Props){
+    return(
+        <button 
+        className="bg-white-500 hover:bg-white-300 text-teal-600 font-bold py-2 px-4 rounded border border-1 border-gray-300"
+        onClick={actionFn}
+    >
+        {label}
+    </button>
+    )
+}

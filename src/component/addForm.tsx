@@ -3,6 +3,7 @@ import {todoContext} from '../context/todoContext'
 import {TextInput} from '../elements/input'
 import {ButtonEl} from '../elements/button'
 import {ErrorAlert} from '../elements/errorAlert'
+import { LangsContext } from "../context/langsContext";
 
 
 export function AddForm() {
@@ -11,6 +12,8 @@ export function AddForm() {
     const [isError, setIsError] = React.useState(false)
     const [errorMessage, setErrorMessage] = React.useState('')
     const taskContext = React.useContext(todoContext)
+    const {stringLocal} = React.useContext(LangsContext)
+
 
     React.useEffect(() => {
         taskContext.tasks.length > 0 && 
@@ -38,15 +41,15 @@ export function AddForm() {
             
         }else{
             setIsError(true)
-            setErrorMessage("You must write something to add")
+            setErrorMessage(stringLocal.addFormMessage)
         }
     }
 
     return(
         <div className="w-full my-3">
             <div className="flex">
-                <TextInput value = {todoTask} changeFn={onValueChange} placeholderTxt="What will you do ?" />
-                <ButtonEl label= "Add" actionFn={addFn} />
+                <TextInput value = {todoTask} changeFn={onValueChange} placeholderTxt={stringLocal.whatWillYouDo} />
+                <ButtonEl label= {stringLocal.add} actionFn={addFn} />
             </div>
             {
                 isError && 
