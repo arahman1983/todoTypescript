@@ -6,23 +6,8 @@ import { tasksReducer } from "../context/tasksReducer";
 import { todoContext } from "../context/todoContext";
 
 export function RouterComponent() {
-  const [tasks, dispatchTasks] = React.useReducer(tasksReducer, [
-    {
-      id: 1,
-      description: "Sports ",
-      complete: false,
-    },
-    {
-      id: 2,
-      description: "Reading",
-      complete: false,
-    },
-    {
-      id: 3,
-      description: "Watch TV",
-      complete: false,
-    },
-  ]);
+  let localData = localStorage.getItem("localTasks")
+  const [tasks, dispatchTasks] = React.useReducer(tasksReducer, localData ? JSON.parse(localData) : []);
 
   return (
     <Router>
