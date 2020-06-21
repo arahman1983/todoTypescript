@@ -12,8 +12,10 @@ function App() {
         stringLocal.setLanguage(lang);
         if(lang === "ar"){
             setDirection("rtl")
+            document.getElementsByTagName("body")[0].style.direction = "rtl"
         }else{
             setDirection("ltr")
+            document.getElementsByTagName("body")[0].style.direction = "ltr"
         }
       }, [lang])
 
